@@ -1,0 +1,6 @@
+streamlit
+pandas
+numpy
+faker
+groq
+python-dotenv
