@@ -1,0 +1,60 @@
+{
+  "customer": {
+    "customer_id": "uuid",
+    "name": "string",
+    "email": "email",
+    "phone": "phone",
+    "date_of_birth": "date",
+    "address": {
+      "street": "string",
+      "city": "string",
+      "state": "string",
+      "country": "string",
+      "postal_code": "string"
+    }
+  },
+  "account": {
+    "account_id": "uuid",
+    "account_type": "enum",
+    "created_date": "date",
+    "status": "enum",
+    "balance": "number"
+  },
+  "transaction": {
+    "transaction_id": "uuid",
+    "transaction_date": "datetime",
+    "amount": "number",
+    "currency": "string",
+    "transaction_type": "enum",
+    "merchant": {
+      "merchant_id": "uuid",
+      "merchant_name": "string",
+      "category": "enum",
+      "location": {
+        "city": "string",
+        "country": "string"
+      }
+    },
+    "payment": {
+      "method": "enum",
+      "card": {
+        "card_type": "enum",
+        "last_four_digits": "string",
+        "expiry_date": "date"
+      }
+    }
+  },
+  "device": {
+    "device_id": "uuid",
+    "device_type": "enum",
+    "ip_address": "ipv4",
+    "browser": "string",
+    "is_new_device": "boolean"
+  },
+  "risk_information": {
+    "risk_score": "number",
+    "previous_fraud_reports": "number",
+    "account_age_days": "number",
+    "verified": "boolean"
+  }
+}
