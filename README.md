@@ -1,4 +1,4 @@
-# 📊 SynthGen
+# 🛡️ SynthGen
 
 ### Synthetic Data Generator with Fraud Pattern Simulation
 
